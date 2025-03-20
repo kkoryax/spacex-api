@@ -1,7 +1,7 @@
 export default function App() {
   return (
     <>
-      <h1>Hello, World!</h1>
+      <h1 className="text-2xl font-bold">React App Starter</h1>
     </>
   )
 }
