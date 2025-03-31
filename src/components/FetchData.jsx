@@ -53,11 +53,12 @@ export function AxiosFetchData() {
             {loading && <p>Loading Data . . .</p>}
             {error && <p>{error}</p>}
 
-            <article className='flex flex-col items-center justify-center w-full h-full'>
-                <h1>LATEST LAUNCH DETAILS</h1>
-                <img src={data.links?.patch?.small} className='mt-6 w-35 h-35 animate-pulse'></img>
-                <h2 className='text-3xl m-2 font-bold'>{data.name}</h2>
-                <div className='flex flex-col bg-white text-black p-4 m-2 rounded-md gap-4'>
+            <article className='flex flex-row items-center justify-center gap-32 w-full h-full'>
+                <article>
+                    <img src={data.links?.patch?.small} className='mt-6 w-35 h-35 animate-pulse'></img>
+                    <h2 className='text-3xl m-2 font-bold'>{data.name}</h2>
+                </article>
+                <article className='flex flex-col bg-white text-black p-4 m-2 rounded-md gap-4'>
                     <div>
                         <h2 className='flex justify-center m-4 text-2xl font-bold'>Live on YouTube</h2>
                         <iframe className='w-full h-64'
@@ -116,7 +117,7 @@ export function AxiosFetchData() {
                                 </p>
                             </div>
                     </section>
-                </div>
+                </article>
             </article>
         </div>
     );
