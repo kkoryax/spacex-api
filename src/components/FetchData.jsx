@@ -76,16 +76,43 @@ export function AxiosFetchData() {
                             <p>{data.date_local}</p>
                         </div>
                     </div>
-                    <div>
-                        <h2 className='text-lg font-bold'>REDDIT</h2>
-                        <a href={redditUrl}
-                        className='text-blue-500 underline'>{redditUrl}</a>
-                    </div>
-                    <div>
-                        <h2 className='text-lg font-bold'>Wikipedia</h2>
-                        <a href={wikipediaUrl}
-                        className='text-blue-500 underline'>{data.links?.wikipedia}</a>
-                    </div>
+                    <section className='flex flex-col gap-2'>
+                            <h2 className='text-lg font-bold'>Learn more on :</h2>
+                            <div className='flex flex-row gap-6'>
+                                <a href={redditUrl}
+                                    className='text-blue-500 underline' target="_blank">
+                                        <button className='bg-white p-2 rounded hover:brightness-75 hover:cursor-pointer'>
+                                            <img src="/src/assets/reddit.svg"
+                                            className='w-10 h-10'
+                                            alt="" />
+                                        </button>
+                                </a>
+                                <a href={wikipediaUrl}
+                                className='text-blue-500 underline' target="_blank">
+                                    <button className='bg-white p-2 rounded hover:brightness-75 hover:cursor-pointer '>
+                                        <img src="/src/assets/wikipedia.svg"
+                                        className='w-10 h-10'
+                                        alt="" />
+                                    </button>
+                                </a>
+                                <a href={youTubeUrl}
+                                className='text-blue-500 underline' target="_blank">
+                                    <button className='bg-white p-2 rounded hover:brightness-75 hover:cursor-pointer'>
+                                        <img src="/src/assets/youtube.svg"
+                                        className='w-10 h-10'
+                                        alt="" />
+                                    </button>
+                                </a>
+                            </div>
+                            <div className='flex flex-row justify-end items-end'>
+                                <p>made by
+                                    <a href="https://github.com/kkoryax" target='_blank'
+                                    className='text-blue-800 m-2'>
+                                    kkoryax
+                                    </a>
+                                </p>
+                            </div>
+                    </section>
                 </div>
             </article>
         </div>
