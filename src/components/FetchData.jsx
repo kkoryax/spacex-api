@@ -1,5 +1,8 @@
 import {useEffect, useState} from 'react';
 import axios from 'axios';
+import redditIcon from '../assets/reddit.svg';
+import wikipediaIcon from '../assets/wikipedia.svg';
+import youtubeIcon from '../assets/youtube.svg';
 
 export function AxiosFetchData() {
     const [data, setData] = useState([]);
@@ -82,25 +85,25 @@ export function AxiosFetchData() {
                                 <a href={redditUrl}
                                     className='text-blue-500 underline' target="_blank">
                                         <button className='bg-white p-2 rounded hover:brightness-75 hover:cursor-pointer'>
-                                            <img src="/src/assets/reddit.svg"
+                                            <img src={redditIcon}
                                             className='w-10 h-10'
-                                            alt="" />
+                                            alt="Reddit" />
                                         </button>
                                 </a>
                                 <a href={wikipediaUrl}
                                 className='text-blue-500 underline' target="_blank">
                                     <button className='bg-white p-2 rounded hover:brightness-75 hover:cursor-pointer '>
-                                        <img src="/src/assets/wikipedia.svg"
+                                        <img src={wikipediaIcon}
                                         className='w-10 h-10'
-                                        alt="" />
+                                        alt="Wikipedia" />
                                     </button>
                                 </a>
                                 <a href={youTubeUrl}
                                 className='text-blue-500 underline' target="_blank">
                                     <button className='bg-white p-2 rounded hover:brightness-75 hover:cursor-pointer'>
-                                        <img src="/src/assets/youtube.svg"
+                                        <img src={youtubeIcon}
                                         className='w-10 h-10'
-                                        alt="" />
+                                        alt="YouTube" />
                                     </button>
                                 </a>
                             </div>
