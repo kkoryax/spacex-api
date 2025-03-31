@@ -50,11 +50,11 @@ export function AxiosFetchData() {
 
     return(
         <div>
-            {loading && <p>Loading Data . . .</p>}
-            {error && <p>{error}</p>}
+            {loading && <p className='w-full h-full flex justify-center items-center'>Loading Data . . .</p>}
+            {error && <p >{error}</p>}
 
             <article className='flex flex-row items-center justify-center gap-32 w-full h-full'>
-                <article>
+                <article className='flex flex-col justify-center items-center'>
                     <img src={data.links?.patch?.small} className='mt-6 w-35 h-35 animate-pulse'></img>
                     <h2 className='text-3xl m-2 font-bold'>{data.name}</h2>
                 </article>
