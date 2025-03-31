@@ -1,6 +1,5 @@
 import { AxiosFetchData } from "./components/FetchData"
 
-
 export default function App() {
   return (
     <>
